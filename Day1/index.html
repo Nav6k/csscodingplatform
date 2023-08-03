@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    
+    margin:9px;
+    padding:10px;
+    
+     }
+
+.item{
+    width :100px;
+    height:100px;
+    background: blue;
+    color:white;
+    /* float: left; */
+    margin:10px;
+}
+
+body{
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.flex-container{
+    background: pink;
+    height:400px;
+    display:flex;
+    justify-content:end;
+    align-items: center;
+    
+}
+
+.flex-container::after{
+    content:'';
+    clear:both;
+    display:block;
+}
+    </style>
+</head>
+<body>
+ <div class="flex-container">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    
+ </div>
+ <h1>jjkbjkbj</h1>
+</body>
+</html>
