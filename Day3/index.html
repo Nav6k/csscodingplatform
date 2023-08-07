@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           height:100%;
+           width:100%;
+            position:relative;
+        }
+      
+        .black-box {
+    background-color:darkgray;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+        .images{
+            position:relative;
+          z-index: 1;
+        mix-blend-mode:multiply;
+        }
+
+        .text-container {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 250px;
+    transform: translate(-50%, -100%);
+    color: #fff;
+}
+.logo{
+    position:absolute;
+    z-index: 2;
+    color:#fff;
+    right: 50%;
+    font-size:100px;
+}
+
+.scroll-down{
+    position:absolute;
+    z-index: 2;
+    color:#fff;
+    right: 50%;
+    bottom: 5%;
+    font-size:70px;
+
+}
+
+
+.navbar ul{
+    display:flex;
+    position:absolute;
+    font-size:70px;
+    right:5%;
+    z-index:2;
+   
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+.navbar{
+    color:#fff;
+    justify-content: space-between;
+    display:flex;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Tragon</div>
+            <ul class="nav">
+               <li>
+                <a href="#">Home</a>
+               </li>
+
+               <li>
+                <a href="#">Plans</a>
+               </li>
+
+               <li>
+                <a href="#">Contact Us</a>
+               </li>
+            </ul>
+            
+            <div class="scroll-down">Scroll Down</div>
+        </nav>
+        <h2 class="text-container"> Life's <br>Better with a backpack</h2>
+       <div class="black-box"></div>
+       
+       <div class="images">
+         <img src="img.jpg" height="100%" width="100%" >
+       </div>
+       
+    </div>
+</body>
+</html>
