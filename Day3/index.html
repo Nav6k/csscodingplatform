@@ -6,14 +6,14 @@
     <title>Document</title>
     <style>
         .container{
-           height:100%;
+           height:100vh;
            width:100%;
             position:relative;
         }
       
         .black-box {
     background-color:darkgray;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     position: absolute;
@@ -22,6 +22,7 @@
             position:relative;
           z-index: 1;
         mix-blend-mode:multiply;
+        height:100vh;
         }
 
         .text-container {
@@ -46,7 +47,7 @@
     position:absolute;
     z-index: 2;
     color:#fff;
-    right: 50%;
+    right: 49%;
     bottom: 5%;
     font-size:70px;
 
@@ -59,16 +60,26 @@
     font-size:70px;
     right:5%;
     z-index:2;
+    color:#fff;
    
 }
 
 .navbar ul li{
     margin-left: 20px;
+    color:#fff;
 }
 .navbar{
     color:#fff;
-    justify-content: space-between;
-    display:flex;
+    
+}
+
+.navbar a{
+    color:white;
+    
+}
+
+.navbar a:hover{
+    color:rgb(28, 175, 224);
 }
     </style>
 </head>
